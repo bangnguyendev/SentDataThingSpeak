@@ -11,98 +11,40 @@
     <LinearLayout
         android:id="@+id/bongden"
         android:layout_weight="2"
-        android:weightSum="3"
+        android:weightSum="5"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Sent message to Dung"
             android:textAlignment="center"
             android:textSize="30sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/text_mess"
+            android:id="@+id/text_gio"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:hint="Input Message"
-            android:text="con%cho%con"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Điền giờ vào đây"
+            android:inputType="time"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/text_phut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Điền phút vào đây"
+            android:inputType="time"
             android:textSize="20sp" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/ngai"
-        android:layout_weight="2"
-        android:weightSum="2"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="0dp">
-        <LinearLayout
-            android:id="@+id/key"
-            android:layout_weight="1"
-            android:weightSum="3"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="0dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:text="Write API Key:"
-                android:textColor="#070000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/Write_APIKey"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:hint="Write API Key"
-                android:inputType="textPassword"
-                android:text="9DU3YS7U45KE50OA"
-                android:textAllCaps="false"
-                android:textColor="#070000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/field"
-            android:layout_weight="1"
-            android:weightSum="3"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="0dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:text="Field x:"
-                android:textColor="#070000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/Fieldx"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:hint="Field x"
-                android:inputType="number"
-                android:text="1"
-                android:textAllCaps="false"
-                android:textColor="#070000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </LinearLayout>
     <LinearLayout
         android:id="@+id/nutnhan"
         android:layout_weight="1"

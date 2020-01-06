@@ -25,11 +25,11 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
     TextView text1;
     Button btn_sent,btn_info;
-    EditText editText, writeapikey, fieldx;
+    EditText text_gio,text_phut;
 
     String res;
     Handler ktra;
-    String bientam, writeapikey_tam, fieldx_tam;
+    String hen_gio, hen_phut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,13 +51,11 @@ public class MainActivity extends AppCompatActivity {
     public void find_id()/** khai báo ãnh xạ*/
     {
 
-        editText = (EditText) findViewById(R.id.text_mess);
-        writeapikey = (EditText) findViewById(R.id.Write_APIKey);
-        fieldx = (EditText) findViewById(R.id.Fieldx);
+        text_gio = (EditText) findViewById(R.id.text_gio);
+        text_phut = (EditText) findViewById(R.id.text_phut);
         btn_sent = (Button) findViewById(R.id.btn);
         btn_info = (Button) findViewById(R.id.btn_info);
         text1 = (TextView) findViewById(R.id.text1);
-
         ktra = new Handler();
 
     }
@@ -74,14 +72,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    bientam = editText.getText().toString();
-                    fieldx_tam = fieldx.getText().toString();
-                    writeapikey_tam = writeapikey.getText().toString();
-                    if (bientam.equals("")){
-                        text1.setText("\nNhập IP sai giá trị!!! ");
-                        Toast.makeText(MainActivity.this,"Nhập IP sai giá trị!!!",Toast.LENGTH_LONG).show();
-                    }
-                    else if(bientam.equals("Set IP nha!!!")){
+                    hen_gio = text_gio.getText().toString();
+                    hen_phut = text_phut.getText().toString();
+                    if ((hen_gio.equals(""))&&(hen_phut.equals(""))){
                         text1.setText("\nNhập IP sai giá trị!!! ");
                         Toast.makeText(MainActivity.this,"Nhập IP sai giá trị!!!",Toast.LENGTH_LONG).show();
                     }
@@ -131,9 +124,8 @@ public class MainActivity extends AppCompatActivity {
     public void postData() throws  IOException
     {
         HttpRequest mReq = new HttpRequest();
-        Log.d("checkaaaaaaaaaaa", bientam);
-        res = mReq.sendGet("https://api.thingspeak.com/update.json?api_key=" + writeapikey_tam +"&field" + fieldx_tam+ "=" + "con%chó%con" + "&status=" + bientam);
-        Log.d("checkaaaaaaaaaaa", "11111111111");
+        res = mReq.sendGet("https://api.thingspeak.com/update.json?api_key=9DU3YS7U45KE50OA&field1="
+                                    + hen_gio + "&field2=" + hen_phut + "/");
         if (res != null) {
             ktra.post(new Runnable() {
                 @Override
