@@ -1,0 +1,72 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.sentmessage"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:5:5-79
+11-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+12-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:6:5-76
+12-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:6:22-73
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:7:5-76
+13-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:7:22-73
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:8:5-81
+14-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:9:5-79
+15-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.NETWORK_STATE_CHANGED_ACTION " />
+16-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:10:5-88
+16-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:10:22-85
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:11:5-67
+17-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:11:22-64
+18    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+18-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:12:5-14:47
+18-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:13:9-60
+19
+20    <application
+20-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:15:5-29:19
+21        android:allowBackup="true"
+21-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:16:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.1.0] C:\Users\NguyenBang\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:17:9-43
+25        android:label="@string/app_name"
+25-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:18:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:19:9-54
+27        android:supportsRtl="true"
+27-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:20:9-35
+28        android:testOnly="true"
+29        android:theme="@style/AppTheme" >
+29-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:21:9-40
+30        <activity android:name="com.example.sentmessage.MainActivity" >
+30-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:22:9-28:20
+30-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:22:19-47
+31            <intent-filter>
+31-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:23:13-27:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:24:17-69
+32-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:24:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:26:17-77
+34-->D:\Github_NguyenBang\Sent-Message---Android\app\src\main\AndroidManifest.xml:26:27-74
+35            </intent-filter>
+36        </activity>
+37    </application>
+38
+39</manifest>
