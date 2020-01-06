@@ -130,10 +130,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void postData() throws  IOException
     {
+        String bientam  = "con%cho%con";
         HttpRequest mReq = new HttpRequest();
-        Log.d("checkaaaaaaaaaaa", bientam);
         res = mReq.sendGet("https://api.thingspeak.com/update.json?api_key=" + writeapikey_tam +"&field" + fieldx_tam+ "=" + "con%chó%con" + "&status=" + bientam);
-        Log.d("checkaaaaaaaaaaa", "11111111111");
         if (res != null) {
             ktra.post(new Runnable() {
                 @Override
